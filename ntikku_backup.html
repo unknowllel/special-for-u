@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Untuk Ntikku 💖</title>
+
+<style>
+body{
+    background:#ffd6e7;
+    font-family:Arial,sans-serif;
+    text-align:center;
+    padding:30px;
+}
+
+.kotak{
+    background:white;
+    max-width:700px;
+    margin:auto;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 0 30px rgba(255,105,180,0.4);
+}
+
+.kotak:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+button{
+    background:#ff7eb6;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+	transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+h1{
+    color:#ff4f93;
+    text-shadow:0 0 10px pink;
+}
+
+#surat{
+    text-align:left;
+    opacity:0;
+    transition:0.8s;
+}
+
+#quiz{
+    opacity:0;
+    transition:0.8s;
+}
+
+.heart{
+    position:fixed;
+    top:-50px;
+    font-size:30px;
+    animation:jatuh 6s linear infinite;
+    pointer-events:none;
+}
+
+.heart:nth-of-type(1){left:10%;}
+.heart:nth-of-type(2){left:30%; animation-delay:1s;}
+.heart:nth-of-type(3){left:50%; animation-delay:2s;}
+.heart:nth-of-type(4){left:70%; animation-delay:3s;}
+.heart:nth-of-type(5){left:90%; animation-delay:4s;}
+
+@keyframes jatuh{
+    from{
+        transform:translateY(-50px);
+    }
+
+    to{
+        transform:translateY(110vh);
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="kotak">
+
+<h1>💖 Untuk Ntikku 💖</h1>
+
+<p>Aku membuat sesuatu khusus untuk kamu...</p>
+
+<button onclick="bukaSurat()">Buka 💌</button>
+<div id="surat" style="display:none;">
+    <h2>💌 Surat Untuk Ntikku</h2>
+
+    <p>
+    HAII NTIKKU!<br><br>
+
+    Aku buat ini dengan susaaaaaaaaah payah, semoga kamu suka ya ;D<br><br>
+
+    Maaf ya aku jarang ada waktu buat kamu, tapi intinya aku beruntung banget pacaran sama kamu. Semoga kamu juga ngerasa gitu.<br><br>
+
+    Maaf ya bikin kamu kelihatan excited sendiri. Aku punya banyak kesibukan di RL. Tapi aku selalu mikirin kamu kok, nggak preng kok WKWKWKWKWK.<br><br>
+
+    Aku sayang sama kamu, Ntikku. Jadilah kekasih orang Jawa agar hidupmu penuh tawa, awokawok. Dan akulah orangnya!
+    </p>
+</div>
+
+<button onclick="mulaiQuiz()">🎮 Lanjut ke Ujian Pacar</button>
+
+<div id="quiz" style="display:none;">
+    <h2>🎀 Ujian Pacar Untuk Ntikku 🎀</h2>
+
+    <p><b>1. Nama panjangku?</b></p>
+
+    <button>A. Lael Espenkiaan</button><br><br>
+    <button>B. Lael Espenkian</button><br><br>
+    <button>C. Laela Espenkiaan</button><br><br>
+    <button>D. Espenkiaan Lael</button><br><br>
+    <button>E. Lael Spenkia</button>
+	
+	<br><br>
+
+<p><b>2. Makanan kesukaanku?</b></p>
+
+<button>A. Seblak</button><br><br>
+<button>B. Martabak Telur</button><br><br>
+<button>C. Bakso</button><br><br>
+<button>D. Mie Ayam</button><br><br>
+<button>E. Nasi Goreng</button>
+
+<br><br>
+
+<p><b>3. Museku?</b></p>
+
+<button>A. Hyunjin</button><br><br>
+<button>B. Felix</button><br><br>
+<button>C. Minje KickFlip</button><br><br>
+<button>D. Lee Know</button><br><br>
+<button>E. Han</button>
+
+<br><br>
+
+<p><b>4. Manusia favoritku?</b></p>
+
+<button>A. Ntikku</button><br><br>
+<button>B. Ntik</button><br><br>
+<button>C. Ntikkuh</button><br><br>
+<button>D. Ntikku ❤️</button><br><br>
+<button>E. Ntikuuu</button>
+
+<br><br>
+
+<p><b>5. Tanggal jadian kita?</b></p>
+
+<button>A. 14 Juni 2026 19.05</button><br><br>
+<button>B. 14 Juni 2026 19.06</button><br><br>
+<button>C. 14 Juni 2026 19.04</button><br><br>
+<button>D. 14 Juni 2026 19.50</button><br><br>
+<button>E. 14 Juni 2026 09.05</button>
+
+<br><br>
+
+<button onclick="hasilQuiz()">🏆 Cek Hasil</button>
+
+<div id="hasil" style="display:none;">
+<h2>🚨 HASIL UJIAN TELAH KELUAR 🚨</h2>
+
+<p>
+🎉 ANJAYYYY KEREN KALI SI NTIK INI!!! 🎉<br><br>
+
+Nilai: 100/100 😎<br>
+Status: PACAR RESMI BERSERTIFIKAT ✅<br><br>
+
+Hadiah: 1 buah sayang dari Lael 💖<br>
+(tidak bisa diuangkan, hanya bisa dipeluk secara virtual) WKWKWKWK
+</p>
+
+<br><br>
+
+<button onclick="hadiah()">🎁 Ambil Hadiah Rahasia</button>
+
+<div id="hadiah" style="display:none;">
+    <h2>🎁 HADIAH BERHASIL DIKLAIM 🎁</h2>
+
+    <p>
+    Kamu mendapatkan:<br><br>
+
+    💖 1 buah Lael  'lael limit' 💖<br><br>
+
+    Status: Tidak bisa dijual, tidak bisa ditukar,
+    dan tidak bisa dikembalikan XD
+    </p>
+</div>
+
+</div>
+
+<br><br>
+
+<button onclick="sertifikat()">🏅 Lihat Sertifikat Pacar</button>
+
+<div id="sertifikat" style="display:none;">
+    <h2>🏅 SERTIFIKAT PACAR RESMI 🏅</h2>
+
+    <p>
+    ════════════════<br><br>
+
+    Nama : Love atau lovechy atau lovechie aduh lupa mbul <br><br>
+
+    Status :<br>
+    PACAR Q anjay harus CAPSLOCK btw <3 <br><br>
+
+    Masa Berlaku :<br>
+    Selama masih saling sayang :0 <br><br>
+
+    ════════════════
+    </p>
+	
+</div>
+
+<br><br>
+
+<button onclick="pesanAcak()">🎲 Pesan Spesial</button>
+
+<p id="pesan"></p>
+
+<script>
+
+function bukaSurat() {
+    document.getElementById("surat").style.display = "block";
+    document.getElementById("surat").style.opacity = "1";
+}
+
+function mulaiQuiz() {
+    document.getElementById("quiz").style.display = "block";
+    document.getElementById("quiz").style.opacity = "1";
+}
+
+function hasilQuiz() {
+    document.getElementById("hasil").style.display = "block";
+}
+
+function hadiah() {
+    document.getElementById("hadiah").style.display = "block";
+}
+
+function sertifikat() {
+    document.getElementById("sertifikat").style.display = "block";
+}
+
+function pesanAcak() {
+
+    let pesan = [
+        "Lael sayang Love",
+        "Jangan lupa makan yaa",
+        "Ini kan my kisah guwe jir",
+        "Kangen level: 10000%",
+        "Mbull lucu banget hari ini",
+        "YEY! dapet big hug dari Lael <3",
+        "Hari ini kamu cantik banget sih ay!"
+    ];
+
+    let random = Math.floor(Math.random() * pesan.length);
+
+    document.getElementById("pesan").innerHTML = pesan[random];
+}
+
+</script>
+
+</div>
+
+<div class="heart">💖</div>
+<div class="heart">💖</div>
+<div class="heart">💖</div>
+<div class="heart">💖</div>
+<div class="heart">💖</div>
+
+</body>
+</html>
